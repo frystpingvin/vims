@@ -1,0 +1,9 @@
+<div class="blog-post">
+    {% unless postFeaturedImage == empty %}<a href="{{ url }}"><img class="featured-image" src="{{ postFeaturedImage }}"></a>{% endunless %}
+    <h2 class="post-title"><a href="{{ url }}">{{ title }}</a></h2>
+    <div class="post-details"> {{ date | date: "%d, MMMM yyyy" }} </div>
+    <div class="post-body">
+      {{ body | strip_html | truncatewords: 65 }}
+      <a href="{{ url }}" class="read-more">Läs mer</a>
+    </div>
+</div>

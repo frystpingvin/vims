@@ -1,0 +1,63 @@
+footer
+  background-color: $base-background-color
+  padding: em(32px) 0
+
+  .logo-container
+    float: left
+    width: 100%
+    margin-bottom: em(16px)
+
+  .footer-content
+    +span(full)
+
+    ul
+      @extend .no-list-ul
+
+  .footer-nav
+    +span(12)
+
+    div > ul > li
+      +span(full)
+      position: relative
+      margin-bottom: em(16px)
+
+      +breakpoint($medium-screen)
+        +span(3 of 12)
+
+      > a
+        font-weight: 700
+
+      a
+        color: $base-font-color
+
+        &:hover
+          color: lighten($base-font-color, 20)
+
+        img
+          display: none
+
+    +breakpoint($medium-screen)
+      .current-parents > div > ul > li
+        +span(3 of 12 last)
+
+  .footer-column
+    +span(full)
+    margin-bottom: em(16px)
+
+    +breakpoint($medium-screen)
+      +span(3 of 12)
+
+      &:last-child
+        +span(3 of 12 last)
+
+    .copyright-container
+      color: $medium-gray
+
+      +breakpoint($medium-screen)
+        text-align: right
+
+  .social-media
+    margin-top: em(8px)
+
+    a
+      margin-right: em(12px) 

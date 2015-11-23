@@ -1,0 +1,41 @@
+.contact-container
+  +span(full)
+  background-image: url('/_System/assets/img/map.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  padding: em(32px) 0
+
+  .contact-content
+    float: left
+    background-color: white
+    padding: em(20px)
+
+    +breakpoint($phone-only)
+      margin: 0 15px
+
+    +breakpoint($medium-screen)
+      +span(8 of 12)
+      +pre(2 of 12)
+
+    h1
+      border-bottom: 1px solid black
+      padding-bottom: em(4px)
+
+    img
+      display: block
+
+    ul
+      @extend .no-list-ul
+
+    img, ul
+      margin-bottom: em(8px)
+
+    .contact-column
+      +span(full)
+      margin-bottom: em(16px)
+
+      +breakpoint($medium-screen)
+        +span(6 of 12)
+
+        &:nth-child(2n+2)
+          +span(6 of 12 last)

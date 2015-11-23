@@ -1,0 +1,42 @@
+.subpage-header-container
+  +span(full)
+  background-color: $blue
+  padding: em(16px) 0
+  margin-bottom: em(32px)
+
+  +breakpoint($medium-screen)
+    padding: em(32px) 0
+
+  .subpage-header
+    +span(full)
+
+    +breakpoint($phone-only)
+      padding: 0 15px
+
+    +breakpoint($medium-screen)
+      +span(8 of 12)
+      +pre(2 of 12)
+
+    p, span, a, h1, h2, h3, h4, h5, h6
+      color: white
+
+    p, span, a
+      font-size: $large-font-size
+
+    h1
+      border-bottom: 1px solid white
+      padding-bottom: em(4px)
+
+.subpage-content
+  +span(full)
+  margin-bottom: em(32px)
+
+  +breakpoint($phone-only)
+    padding: 0 15px
+
+  +breakpoint($medium-screen)
+    +span(8 of 12)
+    +pre(2 of 12)
+
+  img
+    margin-bottom: em(8px)

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+      <title>Köanmälan</title>
+  </head>
+  
+  <body>
+    
+    <div class="subpage-header-container">
+      <div class="subpage-header">
+        <h1 ice:editable="line">Anmälan till Vallentuna IMS</h1>
+        <div ice:editable="html" ice:options="bold, italic">
+            <p>Jag/vi ansöker om plats för mitt/vårt barn enligt nedan. </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="subpage-content" ice:editable="html" ice:options="bold, italic, image, ordered_list, unordered_list">
+      <div id="message"></div>
+      <form name="catwebformform6974" method="post" id="registrationForm" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=393249&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+
+        <h2>Elev</h2>
+        
+        <div class="form-column">
+          <label for="FirstName">Förnamn</label>
+          <input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i förnamn"/>
+        </div>
+          
+        <div class="form-column last">
+          <label for="LastName">Efternamn</label>
+          <input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i efternamn"/>
+        </div>
+        
+        <div class="form-full-width">
+          <div>
+            <label for="EmailAddress">Email</label>
+            <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" data-validation="email" data-validation-error-msg="Fyll i korrekt epostadress"/> {module_ccsecurity}
+          </div>
+          
+          <div>
+            <label for="HomeAddress">Adress</label>
+            <input type="text" name="HomeAddress" id="HomeAddress" class="cat_textbox" maxlength="500" data-validation="required" data-validation-error-msg="Fyll i adress"/>
+          </div>
+          
+          <div>
+            <label for="HomeZip">Postnummer</label>
+            <input type="number" name="HomeZip" id="HomeZip" class="cat_textbox" maxlength="255" data-validation="number" data-validation-error-msg="Fyll i postnummer"/>
+          </div>
+
+          <div>
+            <label for="HomeCity">Ort</label>
+            <input type="text" name="HomeCity" id="HomeCity" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i ort"/>
+          </div>
+          
+          <div>
+            <label for="CAT_Custom_765173_451977">Personnummer</label>
+            <input type="number" maxlength="255" name="CAT_Custom_765173_451977" id="CAT_Custom_765173_451977" class="cat_textbox" data-validation="number" data-validation-error-msg="Fyll i perssonnummer"/>
+          </div>
+        </div>
+        
+        <div class="form-column">
+          <label for="CAT_Custom_765174_451977">Söker till årskurs</label>
+          <select name="CAT_Custom_765174_451977" id="CAT_Custom_765174_451977" class="cat_dropdown" data-validation="required" data-validation-error-msg="Välj en årskurs">
+              <option value=" ">-- Vänligen välj --</option>
+              <option value="F-klass">F-klass</option>
+              <option value="Årskurs 1">Årskurs 1</option>
+              <option value="Årskurs 2">Årskurs 2</option>
+              <option value="Årskurs 3">Årskurs 3</option>
+              <option value="Årskurs 4">Årskurs 4</option>
+              <option value="Årskurs 5">Årskurs 5</option>
+              <option value="Årskurs 6">Årskurs 6</option>
+              <option value="Årskurs 7">Årskurs 7</option>
+          </select>
+        </div>
+        
+        <div class="form-column last">
+          <label for="CAT_Custom_765175_451977">Välj startår</label>
+          <select name="CAT_Custom_765175_451977" id="CAT_Custom_765175_451977" class="cat_dropdown" data-validation="required" data-validation-error-msg="Välj ett startår">
+              <option value=" ">-- Vänligen välj --</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+          </select>
+        </div>
+        
+        <div class="form-full-width">
+          <label for="CAT_Custom_765176_451977">Montessoribakgrund</label>
+          <textarea name="CAT_Custom_765176_451977" id="CAT_Custom_765176_451977" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+        </div>
+        
+        <div class="form-column">
+          <h2>Förälder / Vårdnadshavare 1</h2>
+          <div>
+            <label for="CAT_Custom_765177_451977">Namn</label>
+            <input type="text" maxlength="4000" name="CAT_Custom_765177_451977" id="CAT_Custom_765177_451977" class="cat_textbox" data-validation="required" data-validation-error-msg="Fyll i namn för minst en vårdnadshavare"/>
+          </div>
+          
+          <div>
+            <label for="CAT_Custom_765178_451977">Mobil</label>
+            <input type="number" maxlength="4000" name="CAT_Custom_765178_451977" id="CAT_Custom_765178_451977" class="cat_textbox" data-validation="required" data-validation-error-msg="Fyll i mobil för minst en vårdnadshavare"/>
+          </div>
+          
+          <div>
+            <label for="CAT_Custom_765179_451977">Email</label>
+            <input type="text" maxlength="4000" name="CAT_Custom_765179_451977" id="CAT_Custom_765179_451977" class="cat_textbox"/>
+          </div>
+          
+          
+          <label for="CAT_Custom_765180_451977">Adress</label>
+          
+          <input type="text" maxlength="4000" name="CAT_Custom_765180_451977" id="CAT_Custom_765180_451977" class="cat_textbox" />
+          
+          
+          <label for="CAT_Custom_765182_451977">Postnummer</label>
+          
+          <input type="number" maxlength="4000" name="CAT_Custom_765182_451977" id="CAT_Custom_765182_451977" class="cat_textbox" />
+          
+          
+          <label for="CAT_Custom_765181_451977">Ort</label>
+          
+          <input type="text" maxlength="4000" name="CAT_Custom_765181_451977" id="CAT_Custom_765181_451977" class="cat_textbox" />
+        </div>
+        
+        <div class="form-column last">
+          <h2>Förälder / Vårdnadshavare 1</h2>
+          <label for="CAT_Custom_765183_451977">Namn</label>
+          <input type="text" maxlength="4000" name="CAT_Custom_765183_451977" id="CAT_Custom_765183_451977" class="cat_textbox" />
+          
+          <label for="CAT_Custom_765184_451977">Mobil</label>
+          <input type="number" maxlength="4000" name="CAT_Custom_765184_451977" id="CAT_Custom_765184_451977" class="cat_textbox" />
+          
+          <label for="CAT_Custom_765185_451977">Email</label>
+          <input type="text" maxlength="4000" name="CAT_Custom_765185_451977" id="CAT_Custom_765185_451977" class="cat_textbox" />
+          
+          <label for="CAT_Custom_765186_451977">Adress</label>
+          <input type="text" maxlength="4000" name="CAT_Custom_765186_451977" id="CAT_Custom_765186_451977" class="cat_textbox" />
+          
+          <label for="CAT_Custom_765187_451977">Postnummer</label>
+          <input type="number" maxlength="4000" name="CAT_Custom_765187_451977" id="CAT_Custom_765187_451977" class="cat_textbox" />
+          
+          <label for="CAT_Custom_765188_451977">Ort</label>
+          <input type="text" maxlength="4000" name="CAT_Custom_765188_451977" id="CAT_Custom_765188_451977" class="cat_textbox" />
+        </div>
+        
+        <div class="form-full-width">
+          <input class="cat_button" type="submit" value="Skicka" id="catwebformbutton" />
+        </div>
+        
+      </form>
+
+    </div>
+    
+  </body>
+    
+</html>

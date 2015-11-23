@@ -1,0 +1,21 @@
+{
+  "name": "vallentunaims",
+  "version": "1.0.0",
+  "authors": [
+    "Samuel Lie <samuel.lie1@@gmail.com>"
+  ],
+  "description": "Site for Vallentuna IMS",
+  "main": "Gruntfile.js",
+  "license": "Private",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "compass-breakpoint": "~2.6.1",
+    "susy": "~2.2.6"
+  }
+}

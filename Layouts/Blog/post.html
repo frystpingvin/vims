@@ -1,0 +1,19 @@
+<div class="blog-post">
+
+  <div class="subpage-header-container">
+    <div class="subpage-header">
+      <h1>{{ title }}</h1>
+      <p>{{ date | date: "%d, MMMM yyyy" }}</p>
+    </div>
+  </div>
+
+  <div class="subpage-content">
+    {% unless postFeaturedImage == empty %}<img src="{{ postFeaturedImage }}">{% endunless %}
+    {{ body }}
+  </div>
+
+  <div class="cta-container">
+    <a ice:editable="line, link" href="#" class="button">Anmäl ditt barn till vår kö</a>
+  </div>
+</div>
+<!-- END .blog-post -->

@@ -1,0 +1,89 @@
+$menu-stroke-height: 2px
+$menu-stroke-width: 20px
+
+.nav-toggle
+  position: relative
+  display: inline-block
+  height: 10px+$menu-stroke-height*2
+  width: $menu-stroke-width
+  cursor: pointer
+  float: right
+  margin-top: 38px
+
+  +breakpoint($large-screen)
+    display: none
+
+  &:before
+    content: ""
+    background: $base-font-color
+    height: $menu-stroke-height
+    width: $menu-stroke-width
+    position: absolute 
+    top: 0
+    left: 0
+    display: block 
+    z-index: 99
+    +transition(all linear 0.2s)
+  
+  &:after
+    content: "" 
+    background: $base-font-color 
+    height: $menu-stroke-height
+    width: $menu-stroke-width
+    position: absolute 
+    top: 10px
+    left: 0
+    display: block
+    z-index: 99
+    +transition(all linear 0.2s)
+  
+  &.close
+    &:before
+      transform: rotate(45deg) 
+      top: 0
+      width: $menu-stroke-width
+
+    &:after
+      transform: rotate(-45deg) 
+      top: 0
+      width: $menu-stroke-width
+
+#mobileNav
+  position: fixed
+  width: 100%
+  text-align: center
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background: $light-gray
+  padding-top: 69px
+  z-index: 9
+  +transform(translateY(-100%))
+  +transition(transform 0.5s ease-in-out)
+
+  &.active
+    +transform(translateY(0%))
+
+  ul
+    @extend .no-list-ul
+
+  div > ul > li
+    margin-bottom: em(16px)
+
+    > a
+      font-weight: 700
+
+    a
+      color: $base-font-color
+      font-size: $large-font-size
+
+      &:hover
+        color: lighten($base-font-color, 20)
+
+      img
+        display: none
+
+  .registration a
+    @extend .button
+    padding: 1em 2em

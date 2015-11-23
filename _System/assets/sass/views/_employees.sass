@@ -1,0 +1,35 @@
+.employees-container
+  +span(full)
+
+  .employee
+    +span(full)
+    color: $base-font-color
+    position: relative
+
+    +breakpoint($medium-screen)
+      +span(4 of 12)
+
+      &:nth-child(3n+3)
+        +span(4 of 12 last)
+
+    +breakpoint($large-screen)
+      +span(3 of 12)
+
+      &:nth-child(3n+3)
+        +span(3 of 12)
+
+      &:nth-child(4n+4)
+        +span(3 of 12 last)
+
+    a
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+
+    img
+      width: 100%
+
+    &:hover
+      color: lighten($base-font-color, 20%)

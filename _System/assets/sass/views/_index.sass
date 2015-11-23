@@ -1,0 +1,99 @@
+$hero-height-mobile: 250px
+$hero-height-tablet: 370px
+
+.hero
+  height: $hero-height-mobile
+  margin-bottom: em(16px)
+  background-image: url('/_System/assets/img/hero-background.jpg')
+  background-size: cover
+  background-position: center
+
+  +breakpoint($medium-screen)
+    height: $hero-height-tablet
+
+.index-boxes-container
+  +span(full)
+  position: relative
+  margin-bottom: em(32px)
+  
+  .index-box
+    +span(full)
+    text-align: center
+    background-color: $blue
+    border-radius: $base-border-radius
+    padding: 1em
+
+    +breakpoint($phone-only)
+      margin-bottom: 20px
+
+    +breakpoint($medium-screen)
+      +span(4 of 12)
+      min-height: 324px
+
+    +breakpoint($large-screen)
+      min-height: 290px
+      padding: 2em
+
+    p, h2, a
+      color: white
+
+    p
+      min-height: 72px
+
+    img
+      margin-bottom: em(12px)
+      max-height: 46px
+
+    &:nth-child(2)
+      background-color: $turqouise
+
+    &:nth-child(3)
+      background-color: $green
+
+      +breakpoint($medium-screen)
+        +span(4 of 12 last)
+
+    .button
+      background: none
+      border: 1px solid white
+      border-radius: em(30px)
+
+      &:hover
+        background-color: transparentize(white, 0.75)
+
+.main-content
+  +span(full)
+  margin-bottom: em(32px)
+
+  +breakpoint($medium-screen)
+    +span(8 of 12)
+
+  h1
+    font-size: $h2-font-size
+    font-weight: 500
+
+  p, a
+    font-size: $large-font-size
+    max-width: 90%
+
+.sidebar
+  +span(full)
+  margin-bottom: em(32px)
+
+  +breakpoint($medium-screen)
+    +span(4 of 12 last)
+
+  .quote-container
+    background-color: $base-background-color
+    padding: 1.5em
+    margin-bottom: em(16px)
+
+    p
+      margin-bottom: em(8px)
+
+    .parent
+      color: $medium-gray
+    
+    .quote-icon
+      text-align: center
+      margin-bottom: em(8px)
