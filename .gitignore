@@ -2,5 +2,6 @@ sftp-config.json
 .sass-cache
 bower_components
 node_modules
+*.css.map
 *.css
 *.scss
