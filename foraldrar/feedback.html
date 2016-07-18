@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Feedback och klagomålshantering</title>
+  </head>
+
+  <body>
+
+    <div class="subpage-header-container">
+      <div class="subpage-header">
+        <h1 ice:editable="line">Feedback och klagomålshantering</h1>
+        <div ice:editable="html" ice:options="bold, italic">
+            <p>Fyll i formuläret nedan ifall du har någon feedback på något som rör skolan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subpage-content">
+      <div id="message"></div>
+
+      <form name="catwebformform4633" id="feedbackForm" method="post" onsubmit="return checkWholeForm4633(this)" enctype="multipart/form-data" action="http://www.vallentunaims.se/FormProcessv2.aspx?WebFormID=467260&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+
+        <div class="form-column">
+          <label for="FirstName">Förnamn</label>
+          <input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i förnamn"/>
+        </div>
+
+        <div class="form-column last">
+          <label for="LastName">Efternamn</label>
+          <input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i efternamn"/>
+        </div>
+
+        <div class="form-full-width">
+          <div>
+            <label for="EmailAddress">E-postadress</label>
+            <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" data-validation="email" data-validation-error-msg="Fyll i korrekt epostadress"/>
+          </div>
+
+          <div>
+            <label for="CellPhone">Mobil</label>
+            <input type="text" name="CellPhone" id="CellPhone" class="cat_textbox" maxlength="255" data-validation="required" data-validation-error-msg="Fyll i mobilnummer"/>
+          </div>
+
+          <div>
+            <label for="CAT_Custom_870575_528210">Klass</label>
+            <input type="text" maxlength="4000" name="CAT_Custom_870575_528210" id="CAT_Custom_870575_528210" class="cat_textbox" data-validation="required" data-validation-error-msg="Fyll i klass"/>
+          </div>
+
+          <div>
+            <label for="CAT_Custom_870577_528210">Berör</label>
+            <select name="CAT_Custom_870577_528210" id="CAT_Custom_870577_528210" class="cat_dropdown concerning" data-validation="required" data-validation-error-msg="Fyll i vem det berör">
+              <option value=" ">-- Vänligen välj --</option>
+              <option value="Ledning">Ledning</option>
+              <option value="Mellanstadiet">Mellanstadiet</option>
+              <option value="Lågstadiet">Lågstadiet</option>
+              <option value="Fritids">Fritids</option>
+              <option value="Annan">Annan (fyll i)</option>
+            </select>
+          </div>
+          <div id="otherType" style="display:none;">
+            <label for="CAT_Custom_870578_528210">Fyll i vem feedbacken berör</label>
+            <input type="text" maxlength="4000" name="CAT_Custom_870578_528210" id="CAT_Custom_870578_528210" class="cat_textbox" data-validation="required" data-validation-error-msg="Fyll i vem det berör"/>
+          </div>
+
+          <div>
+            <label for="CAT_Custom_870585_528210">Ärende</label>
+            <textarea name="CAT_Custom_870585_528210" id="CAT_Custom_870585_528210" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);" data-validation="required" data-validation-error-msg="Fyll i ditt ärende"></textarea>
+          </div>
+
+          <div>
+            <label for="CAT_Custom_870579_528210">Hur brådskande</label>
+            <select name="CAT_Custom_870579_528210" id="CAT_Custom_870579_528210" class="cat_dropdown" data-validation="required" data-validation-error-msg="Fyll i hur brådskande ärendet är">
+              <option value=" ">-- Vänligen välj --</option>
+              <option value="I morgon">I morgon</option>
+              <option value="Inom en vecka">Inom en vecka</option>
+              <option value="Inom en månad">Inom en månad</option>
+              <option value="Under denna termin">Under denna termin</option>
+            </select>
+          </div>
+        </div>
+
+        {module_ccsecurity}
+
+        <div class="form-full-width">
+          <input class="cat_button" type="submit" value="Skicka" id="catwebformbutton" />
+        </div>
+
+    </form>
+
+    </div>
+
+  </body>
+
+</html>
