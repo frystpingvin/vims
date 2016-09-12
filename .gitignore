@@ -5,3 +5,4 @@ node_modules
 *.css.map
 *.css
 *.scss
+.DS_Store
