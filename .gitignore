@@ -6,3 +6,4 @@ node_modules
 *.css
 *.scss
 .DS_Store
+/build
