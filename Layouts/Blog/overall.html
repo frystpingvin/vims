@@ -7,17 +7,29 @@
   </div>
 </div>
 
-<div class="news-content">
-  {tag_postlist}
-  <div class="pagination">
-    {% if pagination.previousPageUrl != "#" %}
-      <span class="previous"><a href="{{ pagination.previousPageUrl }}">Nyare inlägg</a></span>
-    {% endif %}
-    {% if pagination.nextPageUrl != "#" %}
-      <span class="next"><a href="{{ pagination.nextPageUrl }}">Äldre inlägg</a></span>
-    {% endif %}
+{% if globals.get.BlogId == 16019 %}
+  <div class="abc-content">
+    <div class="abc-feed">
+      {module_blogpostlist blogId="16019" rowCount="100" template="/_System/assets/templates/abc-feed.tpl"}
+    </div>
+    <div class="abc-menu">
+      <h2>Letar du efter något?</h2>
+      {module_blogpostlist blogId="16019" rowCount="100" template="/_System/assets/templates/abc-menu.tpl"}
+    </div>
   </div>
-</div>
+{% else %}
+  <div class="news-content">
+    {tag_postlist}
+    <div class="pagination">
+      {% if pagination.previousPageUrl %}
+        <span class="previous"><a href="{{ pagination.previousPageUrl }}">Nyare inlägg</a></span>
+      {% endif %}
+      {% if pagination.nextPageUrl %}
+        <span class="next"><a href="{{ pagination.nextPageUrl }}">Äldre inlägg</a></span>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
 
 <div class="cta-container">
   <a ice:editable="line, link" href="#" class="button">Anmäl ditt barn till vår kö</a>
