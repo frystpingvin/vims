@@ -1,5 +1,5 @@
 
-/* -------- _System/assets/js/form.js -------- */ 
+/* -------- _System/assets/js/form.js -------- */
 
 $.validate({
   form : '#registrationForm, #feedbackForm, #jobForm'
@@ -7,7 +7,7 @@ $.validate({
 
 // Registration form
 $('#registrationForm').ajaxForm(function() {
-  $('#message').addClass('success').fadeIn().html('<h3>Tack för din köanmälan, vänligen spara bekräftelsemailet som du mottagit på e-post.</h3>');
+  $('#message').addClass('success').fadeIn().html('<h3>Tack för din köanmälan!</h3><p>Vänligen spara bekräftelsemailet som du mottagit på e-post. Ifall du inte mottagit något bekräftelsemail, dubbelkolla din spam-inkorg alternativt maila <a href="mailto:filippa@vallentunaims.se">filippa@vallentunaims.se</a> ifall du fortfarande inte hittar mailet.</p>');
   $('#registrationForm').fadeOut();//Hide the form
 });
 
@@ -35,7 +35,7 @@ $('#jobForm').ajaxForm(function() {
 });
 
 
-/* -------- _System/assets/js/mobile-nav.js -------- */ 
+/* -------- _System/assets/js/mobile-nav.js -------- */
 
 $( "#navToggle" ).click(function() {
   $( "#mobileNav" ).toggleClass( "active" );
