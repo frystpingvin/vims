@@ -1,20 +1,5 @@
 $.validate({
-  form : '#feedbackForm, #jobForm'
-});
-
-// Feedback form
-$('#feedbackForm').ajaxForm(function() {
-  $('#message').addClass('success').fadeIn().html('<h3>Tack för din feedback. Vi återkommer inom kort.</h3>');
-  $('#feedbackForm').fadeOut();//Hide the form
-});
-
-var concerning = jQuery('.concerning');
-var select = this.value;
-concerning.change(function () {
-  if ($(this).val() == 'Annan') {
-      $('#otherType').show();
-  }
-  else $('#otherType').hide();
+  form : '#jobForm'
 });
 
 // Job form
