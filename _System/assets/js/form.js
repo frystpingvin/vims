@@ -1,11 +1,5 @@
 $.validate({
-  form : '#registrationForm, #feedbackForm, #jobForm'
-});
-
-// Registration form
-$('#registrationForm').ajaxForm(function() {
-  $('#message').addClass('success').fadeIn().html('<h3>Tack för din köanmälan, vänligen spara bekräftelsemailet som du mottagit på e-post.</h3>');
-  $('#registrationForm').fadeOut();//Hide the form
+  form : '#feedbackForm, #jobForm'
 });
 
 // Feedback form
@@ -17,8 +11,6 @@ $('#feedbackForm').ajaxForm(function() {
 var concerning = jQuery('.concerning');
 var select = this.value;
 concerning.change(function () {
-  console.log('change');
-
   if ($(this).val() == 'Annan') {
       $('#otherType').show();
   }

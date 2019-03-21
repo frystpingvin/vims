@@ -1,14 +1,8 @@
 
-/* -------- _System/assets/js/form.js -------- */
+/* -------- _System/assets/js/form.js -------- */ 
 
 $.validate({
-  form : '#registrationForm, #feedbackForm, #jobForm'
-});
-
-// Registration form
-$('#registrationForm').ajaxForm(function() {
-  $('#message').addClass('success').fadeIn().html('<h3>Tack för din köanmälan!</h3><p>Vänligen spara bekräftelsemailet som du mottagit på e-post. Ifall du inte mottagit något bekräftelsemail, dubbelkolla din spam-inkorg alternativt maila <a href="mailto:filippa@vallentunaims.se">filippa@vallentunaims.se</a> ifall du fortfarande inte hittar mailet.</p>');
-  $('#registrationForm').fadeOut();//Hide the form
+  form : '#feedbackForm, #jobForm'
 });
 
 // Feedback form
@@ -20,8 +14,6 @@ $('#feedbackForm').ajaxForm(function() {
 var concerning = jQuery('.concerning');
 var select = this.value;
 concerning.change(function () {
-  console.log('change');
-
   if ($(this).val() == 'Annan') {
       $('#otherType').show();
   }
@@ -35,7 +27,7 @@ $('#jobForm').ajaxForm(function() {
 });
 
 
-/* -------- _System/assets/js/mobile-nav.js -------- */
+/* -------- _System/assets/js/mobile-nav.js -------- */ 
 
 $( "#navToggle" ).click(function() {
   $( "#mobileNav" ).toggleClass( "active" );
